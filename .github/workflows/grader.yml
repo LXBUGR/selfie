@@ -71,7 +71,7 @@ jobs:
 
   auto-grade-selfie-assignment-on-macos:
     name: Run autograder on macOS
-    runs-on: macos-latest
+    runs-on: macos-12
     env:
       COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
       ASSIGNMENT: ${{ github.event.inputs.assignmentid }}
