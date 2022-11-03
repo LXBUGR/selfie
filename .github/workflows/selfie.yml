@@ -61,7 +61,7 @@ jobs:
 
   make-all-on-macos:
     name: Make all of selfie on macOS
-    runs-on: macos-latest
+    runs-on: macos-12
     if: ${{ ((github.event_name != 'workflow_dispatch') || (github.event.inputs.osmacos == 'true')) && ((!github.event.repository.private) || (github.event_name == 'workflow_dispatch')) }}
 
     steps:
